@@ -9,9 +9,9 @@ function verificar() {
         var fSex = document.getElementsByName('radgender')
         var idade = ano - Number(formAno.value)
         var genero = ''
-        var img = document.createElement('img')
-        img.setAttribute('id', 'foto')
-
+        var img = document.createElement('img') //cria o elemento de img a partir do js
+        img.setAttribute('id', 'foto') // aqui é criado o id da img
+          
         if (fSex[0].checked) {
             genero = 'feminino'
         
@@ -48,7 +48,7 @@ function verificar() {
         
             res.style.textAlign = 'center'
             res.innerHTML = `<p>Detectamos uma pessoa do gênero <strong>${genero}</strong> com ${idade} anos de idade!</p>`
-            res.appendChild(img) 
+            res.appendChild(img) //a imagem é lida por esse elemento
 
      
 }
