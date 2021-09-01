@@ -45,10 +45,7 @@ function verificar() {
                 img.setAttribute('src', 'imagens/homem-velho.png')
             }
         }
-<<<<<<< HEAD
-=======
         
->>>>>>> 293f8e6eddd4a5f59c06882396d3b2ce8623656e
             res.style.textAlign = 'center'
             res.innerHTML = `<p>Detectamos uma pessoa do gênero <strong>${genero}</strong> com ${idade} anos de idade!</p>`
             res.appendChild(img) 
