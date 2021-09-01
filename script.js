@@ -44,12 +44,13 @@ function verificar() {
                 //velho
                 img.setAttribute('src', 'imagens/homem-velho.png')
             }
+        }
         
             res.style.textAlign = 'left'
             res.innerHTML = `<p>Detectamos uma pessoa do gênero <strong>${genero}</strong> com ${idade} anos de idade!</p>`
             res.appendChild(img) 
 
-     }
+     
 }
 }
 
